@@ -1,0 +1,15 @@
+ROUTER
+
+npm install react-navigation --save
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --save
+npm install react-navigation-stack --save 
+
+
+REDUX 
+
+npm install redux react-redux --save
+npm install redux-saga --save
+
+
+NATIVE BASE
+npm install native-base --save
