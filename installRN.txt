@@ -1,0 +1,29 @@
+1. Install node
+2. Install jdk
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+3. Install python
+https://www.python.org/downloads/release/python-2716/
+4.Install android studio
+5.Install react native
+npm install -g react-native-cli
+6. Configurar variables de entorno del sistema
+
+ANDROID_HOME
+C:\Users\Gabriel\AppData\Local\Android\Sdk
+JAVA_HOME
+C:\Program Files\Java\jdk1.8.0_261
+path
+%JAVA_HOME%\bin
+%ANDROID_HOME%\emulator
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\tools\bin
+%ANDROID_HOME%\platform-tools
+
+7. Aceptar las licencias
+cd /d "%ANDROID_HOME%/tools/bin"
+sdkmanager --licenses
+
+8. Crear el emulador en nexus 6 en android studio
+
+9. Iniciar aplicacion
+react-native run-android
