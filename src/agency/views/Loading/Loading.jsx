@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
-import {LOGIN_PAGE} from '../../constants';
 import {Spinner, Container, Content, Grid} from 'native-base';
-import styles from './LoadingPage.styles';
+import styles from './loading.styles';
 
 export default ({navigation}) => {
   useEffect(() => {
-    navigation.navigate(LOGIN_PAGE);
+    navigation.navigate('login');
   }, []);
 
   return (

@@ -1,8 +1,13 @@
 import React from 'react';
-import Agency from './src/agency';
+import Navigator from './src/navigation/Navigator';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
-  return <Agency />;
+  return (
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
+  );
 };
 
 export default App;

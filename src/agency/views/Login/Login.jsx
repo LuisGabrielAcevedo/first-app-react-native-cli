@@ -1,10 +1,10 @@
 import React from 'react';
 import {Container, Content, Text, Grid, Button} from 'native-base';
-import styles from './LoginPage.styles';
+import styles from './login.styles';
 import {Image} from 'react-native';
 const GOOGLE_IMAGE = require('../../assets/images/google.png');
 
-export default function LoginPage() {
+export default function Login() {
   return (
     <Container>
       <Content contentContainerStyle={styles.content}>

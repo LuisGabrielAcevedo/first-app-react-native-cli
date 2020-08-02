@@ -27,3 +27,7 @@ sdkmanager --licenses
 
 9. Iniciar aplicacion
 react-native run-android
+
+COMANDOS
+- Actualizar react native 
+npm install -i -g --force react-native-cli
