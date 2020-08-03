@@ -1,10 +1,19 @@
 import React, {useEffect} from 'react';
 import {Spinner, Container, Content, Grid} from 'native-base';
 import styles from './loading.styles';
+import {asyncStorageGetItem} from '../../utils/asyncStorage';
 
-export default ({navigation}) => {
+const Loading = ({navigation}) => {
   useEffect(() => {
-    navigation.navigate('login');
+    async function redirect() {
+      const token = await asyncStorageGetItem('@movies-token');
+      let route = 'login';
+      if (token) {
+        route = 'home';
+      }
+      navigation.navigate(route);
+    }
+    redirect();
   }, []);
 
   return (
@@ -17,3 +26,5 @@ export default ({navigation}) => {
     </Container>
   );
 };
+
+export default Loading;

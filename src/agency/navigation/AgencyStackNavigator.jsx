@@ -10,7 +10,11 @@ const Stack = createStackNavigator();
 
 const AgencyStackNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="loading">
+    <Stack.Navigator
+      initialRouteName="loading"
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Stack.Screen name="loading" component={Loading} />
       <Stack.Screen name="login" component={Login} />
       <Stack.Screen name="home" component={Home} />

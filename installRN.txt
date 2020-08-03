@@ -31,3 +31,5 @@ react-native run-android
 COMANDOS
 - Actualizar react native 
 npm install -i -g --force react-native-cli
+- generar android apk
+gradlew assembleRelease
