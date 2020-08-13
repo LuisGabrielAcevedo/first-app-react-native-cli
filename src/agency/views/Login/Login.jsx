@@ -4,6 +4,7 @@ import styles from './login.styles';
 import {Image} from 'react-native';
 import {asyncStorageSetItem} from '../../utils/asyncStorage';
 const GOOGLE_IMAGE = require('../../assets/images/google.png');
+import genericStyles from '../../styles';
 
 const Login = (props) => {
   const {navigation} = props;
@@ -18,8 +19,9 @@ const Login = (props) => {
 
   return (
     <Container>
-      <Content contentContainerStyle={styles.content}>
-        <Grid style={styles.grid}>
+      <Content
+        contentContainerStyle={[genericStyles.centeredContent, styles.content]}>
+        <Grid style={[genericStyles.centeredGrid, styles.grid]}>
           <Text style={styles.title}>¡Bienvenido!</Text>
           <Text style={styles.subtitle}>Inicia sesión para continuar.</Text>
           <Button style={styles.button} light onPress={handleLogin}>

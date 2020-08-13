@@ -1,7 +1,6 @@
-import { combineReducers } from "redux";
+import {combineReducers} from 'redux';
+import itineraries from './itineraries.reducer';
 
 export default combineReducers({
-  sampleReducer: () => {
-    return {};
-  },
+  itineraries,
 });

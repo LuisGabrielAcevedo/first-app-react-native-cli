@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Container, Content, Text} from 'native-base';
+import {Container, Content, Text, Grid} from 'native-base';
 import MyHeader from '../../components/Header/Header';
 import {asyncStorageGetItem} from '../../utils/asyncStorage';
+import Search from '../../components/Search/Search';
+import genericStyles from '../../styles';
 
 const Home = () => {
   const [user, setUser] = useState(null);
@@ -24,6 +26,11 @@ const Home = () => {
           'https://i1.sndcdn.com/avatars-000336588052-eufyvb-t500x500.jpg'
         }
       />
+      <Content contentContainerStyle={genericStyles.centeredContent}>
+        <Grid style={genericStyles.centeredGrid}>
+          <Search />
+        </Grid>
+      </Content>
     </Container>
   );
 };

@@ -1,0 +1,3 @@
+export const GET_LOCATIONS_START = '@agency:GET_LOCATIONS_START';
+export const GET_LOCATIONS_SUCCESS = '@agency:GET_LOCATIONS_SUCCESS';
+export const GET_LOCATIONS_ERROR = '@agency:GET_LOCATIONS_ERROR';

@@ -7,8 +7,6 @@ export default StyleSheet.create({
     flex: 1,
   },
   grid: {
-    alignItems: 'center',
-    justifyContent: 'center',
     flexDirection: 'column',
   },
   title: {
